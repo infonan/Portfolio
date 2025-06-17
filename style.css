@@ -42,13 +42,13 @@
     padding: 8px 12px;
   }
 
-  .resume {
+  #resume {
     width: 100%;
     height: auto;
     padding: 2vh 1vw;
   }
 
-  .resume img {
+  #resume img {
     width: 200px;
     height: 200px;
     margin: 12px auto;
@@ -249,13 +249,13 @@ nav ul li a:hover {
   
 
 
-.resume {
+#resume {
   width: 40vw;
   height: 30vh;
   padding: 1vh 20vw ;
   
 }
-.resume img {
+#resume img {
       width: 250px;
       height: 250px;
       border-radius: 15px;
@@ -264,7 +264,7 @@ nav ul li a:hover {
     
     }
 
-.resume img:hover {
+#resume img:hover {
       transform: scale(1.05);
     }
 
