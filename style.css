@@ -245,7 +245,7 @@ nav ul li a:hover {
 #resume img {
     border: 1px solid white;
     border-radius: 20px;
-    box-shadow: (0,0,0,0.5);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
     width:300px;
     height: 300px;
 }
