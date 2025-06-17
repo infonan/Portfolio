@@ -41,6 +41,10 @@
     font-size: 14px;
     padding: 8px 12px;
   }
+  #resume a img {
+    border: 1px solid white;
+    border-radius: 20px;
+    box-shadow: (0,0,0,0.5);
   .section-title {
     font-size: 16px;
   }
