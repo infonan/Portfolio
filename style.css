@@ -249,28 +249,6 @@ nav ul li a:hover {
   
 
 
-#resume {
-  width: 50vw;
-  height: 30vh;
-  padding: 1vh 20vw ;
-  
-}
-#resume img {
-      width: 300px;
-      height: 300px;
-      border-radius: 15px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-      transition: transform 0.3s ease;
-    
-    }
-
-#resume img:hover {
-      transform: scale(1.05);
-    }
-
-  a {
-      text-decoration: none;
-    }
   
 .title {
     font-size: 30px;
