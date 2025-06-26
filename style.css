@@ -495,6 +495,7 @@ text-decoration: underline;
 }
 /* image slider*/
 .slider-wrapper {
+  .slider-wrapper {
   max-width: 95%;
   margin: 20px auto;
 }
@@ -505,6 +506,7 @@ text-decoration: underline;
   border: 2px solid #ccc;
   border-radius: 15px;
   background: #f9f9f9;
+  width: 100%;
 }
 
 .slider-track {
@@ -530,14 +532,18 @@ text-decoration: underline;
 .slider-controls {
   position: absolute;
   top: 50%;
-  width: 98%;
+  left: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   transform: translateY(-50%);
   padding: 0 10px;
+  pointer-events: none;
+  z-index: 2;
 }
 
 .slider-button {
+  pointer-events: auto;
   background: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;
@@ -545,5 +551,6 @@ text-decoration: underline;
   padding: 20px 10px;
   border-radius: 50%;
   cursor: pointer;
+  z-index: 3;
 }
-
+  
