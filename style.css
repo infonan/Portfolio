@@ -513,7 +513,8 @@ text-decoration: underline;
 }
 
 .slide {
-  min-width: 100%;
+  flex-shrink: 0;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -545,3 +546,4 @@ text-decoration: underline;
   border-radius: 50%;
   cursor: pointer;
 }
+
