@@ -13,60 +13,47 @@ document.querySelectorAll('.slider').forEach((slider) => {
   let index = 0;
 
   const updateSlider = () => {
-    const width = slider.clientWidth;
-    track.style.transform = `translateX(-${index * width}px)`;
-  };
-
-  const initSlider = () => {
-    const width = slider.clientWidth;
-
-    // Ensure every slide is 100% width
-    slides.forEach((slide) => {
-      slide.style.minWidth = width + "px";
+    const slideWidth = slider.clientWidth;
+    track.style.transform = `translateX(-${index * slideWidth}px)`;
+    track.style.width = `${slides.length * slideWidth}px`;
+    slides.forEach(slide => {
+      slide.style.width = `${slideWidth}px`;
     });
-
-    updateSlider();
   };
 
   const waitForImages = () => {
-    const images = slider.querySelectorAll("img");
+    const images = slider.querySelectorAll('img');
     let loaded = 0;
-    const total = images.length;
 
-    if (total === 0) {
-      initSlider();
+    if (images.length === 0) {
+      updateSlider();
       return;
     }
 
     images.forEach((img) => {
-      if (img.complete) {
-        loaded++;
-      } else {
-        img.addEventListener("load", () => {
+      if (img.complete) loaded++;
+      else {
+        img.onload = () => {
           loaded++;
-          if (loaded === total) {
-            initSlider();
-          }
-        });
+          if (loaded === images.length) updateSlider();
+        };
       }
     });
 
-    if (loaded === total) {
-      initSlider();
-    }
+    if (loaded === images.length) updateSlider();
   };
 
-  nextBtn.addEventListener("click", () => {
+  nextBtn.addEventListener('click', () => {
     index = (index + 1) % slides.length;
     updateSlider();
   });
 
-  prevBtn.addEventListener("click", () => {
+  prevBtn.addEventListener('click', () => {
     index = (index - 1 + slides.length) % slides.length;
     updateSlider();
   });
 
-  window.addEventListener("resize", initSlider);
+  window.addEventListener('resize', updateSlider);
 
   waitForImages();
 });
