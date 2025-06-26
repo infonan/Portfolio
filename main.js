@@ -13,47 +13,49 @@ document.querySelectorAll('.slider').forEach((slider) => {
   let index = 0;
 
   const updateSlider = () => {
-    const slideWidth = slider.clientWidth;
-    track.style.transform = `translateX(-${index * slideWidth}px)`;
-    track.style.width = `${slides.length * slideWidth}px`;
-    slides.forEach(slide => {
-      slide.style.width = `${slideWidth}px`;
+    const width = slider.clientWidth;
+    track.style.width = `${slides.length * width}px`;
+    track.style.transform = `translateX(-${index * width}px)`;
+    slides.forEach((slide) => {
+      slide.style.width = `${width}px`;
     });
   };
 
   const waitForImages = () => {
-    const images = slider.querySelectorAll('img');
+    const images = slider.querySelectorAll("img");
     let loaded = 0;
+    const total = images.length;
 
-    if (images.length === 0) {
+    if (total === 0) {
       updateSlider();
       return;
     }
 
     images.forEach((img) => {
-      if (img.complete) loaded++;
-      else {
+      if (img.complete) {
+        loaded++;
+      } else {
         img.onload = () => {
           loaded++;
-          if (loaded === images.length) updateSlider();
+          if (loaded === total) updateSlider();
         };
       }
     });
 
-    if (loaded === images.length) updateSlider();
+    if (loaded === total) updateSlider();
   };
 
-  nextBtn.addEventListener('click', () => {
+  nextBtn.addEventListener("click", () => {
     index = (index + 1) % slides.length;
     updateSlider();
   });
 
-  prevBtn.addEventListener('click', () => {
+  prevBtn.addEventListener("click", () => {
     index = (index - 1 + slides.length) % slides.length;
     updateSlider();
   });
 
-  window.addEventListener('resize', updateSlider);
+  window.addEventListener("resize", updateSlider);
 
   waitForImages();
 });
