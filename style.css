@@ -495,9 +495,9 @@ text-decoration: underline;
 }
 /* image slider*/
 .slider-wrapper {
-  .slider-wrapper {
   max-width: 95%;
   margin: 20px auto;
+  position: relative; /* Added for proper containment */
 }
 
 .slider {
@@ -506,17 +506,17 @@ text-decoration: underline;
   border: 2px solid #ccc;
   border-radius: 15px;
   background: #f9f9f9;
-  width: 100%;
 }
 
 .slider-track {
   display: flex;
   transition: transform 0.4s ease-in-out;
+  will-change: transform; /* Improves performance */
 }
 
 .slide {
-  flex-shrink: 0;
-  width: 100%;
+  flex: 0 0 100%; /* Crucial fix - prevents slide shrinkage */
+  min-width: 100%; /* Ensures full width */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -527,30 +527,32 @@ text-decoration: underline;
   width: 100%;
   max-height: 400px;
   object-fit: contain;
+  display: block; /* Removes extra space under images */
 }
 
 .slider-controls {
   position: absolute;
   top: 50%;
-  left: 0;
-  width: 98%;
+  left: 0; /* Changed from width:98% */
+  right: 0; /* Changed from width:98% */
   display: flex;
   justify-content: space-between;
   transform: translateY(-50%);
   padding: 0 10px;
-  pointer-events: none;
-  z-index: 2;
+  z-index: 10; /* Ensures buttons stay above slides */
 }
 
 .slider-button {
-  pointer-events: auto;
   background: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;
   font-size: 24px;
-  padding: 20px;
+  padding: 20px 10px;
   border-radius: 50%;
   cursor: pointer;
-  z-index: 3;
+  transition: opacity 0.3s; /* Smooth hover effect */
 }
-  
+
+.slider-button:hover {
+  opacity: 0.8;
+}
