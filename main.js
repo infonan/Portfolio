@@ -13,31 +13,43 @@ document.addEventListener('DOMContentLoaded', function() {
     const nextBtn = slider.querySelector('.slider-button.next');
     const totalSlides = slides.length;
     let currentIndex = 0;
-    
-    // Initialize slider position
-    updateSlider();
-    
+    let intervalId;
+
     function updateSlider() {
       track.style.transform = `translateX(-${currentIndex * 100}%)`;
     }
-    
-    nextBtn.addEventListener('click', function() {
+
+    function goToNext() {
       currentIndex = (currentIndex + 1) % totalSlides;
       updateSlider();
-    });
-    
-    prevBtn.addEventListener('click', function() {
+    }
+
+    function goToPrev() {
       currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
       updateSlider();
-    });
-    
-    // Optional: Auto-play (remove if not needed)
-    const autoplay = setInterval(() => {
-      currentIndex = (currentIndex + 1) % totalSlides;
-      updateSlider();
-    }, 5000);
-    
-    // Pause autoplay on hover
-    slider.addEventListener('mouseenter', () => clearInterval(autoplay));
+    }
+
+    // Add button functionality only if buttons exist
+    if (nextBtn) nextBtn.addEventListener('click', goToNext);
+    if (prevBtn) prevBtn.addEventListener('click', goToPrev);
+
+    // Autoplay for all sliders
+    function startAutoplay() {
+      intervalId = setInterval(goToNext, 3000); // 3 seconds per slide
+    }
+
+    function stopAutoplay() {
+      clearInterval(intervalId);
+    }
+
+    // Start autoplay
+    startAutoplay();
+
+    // Optional: pause on hover if you want
+    slider.addEventListener('mouseenter', stopAutoplay);
+    slider.addEventListener('mouseleave', startAutoplay);
+
+    // Initialize
+    updateSlider();
   });
 });
