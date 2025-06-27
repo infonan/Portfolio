@@ -139,11 +139,12 @@ nav ul li a:hover {
   
 
 #resume {
-  width: 40vw;
+  width: 100%
   height: auto;
-  padding: 2vh 10vw ;
-  align-items: center;
+  padding: 2vh 5vw ;
+  text-align: center;
   font-size: 1.8rem;
+  margin: 0;
   
 }
 #resume img {
@@ -152,6 +153,7 @@ nav ul li a:hover {
       border-radius: 0.833rem;
       box-shadow: 0 0.44rem 1.12rem rgba(0, 0, 0, 0.2);
       transition: transform 0.3s ease;
+      margin: auto;
     
     }
 
