@@ -142,6 +142,7 @@ nav ul li a:hover {
   width: 40vw;
   height: auto;
   padding: 2vh 10vw ;
+  align-items: center;
   
 }
 #resume img {
