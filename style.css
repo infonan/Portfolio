@@ -138,10 +138,9 @@ nav ul li a:hover {
 }
   
 
-
 #resume {
-  width: 90%;
-  height: auto;
+  width: 40vw;
+  height: 30vh;
   padding: 2vh 20vw ;
   
 }
