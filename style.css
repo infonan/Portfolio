@@ -59,7 +59,7 @@ body {
     }
     
   .skills-section {
-    max-width: 44.44rem;
+    max-width: 100%;
     margin: 2.22rem auto;
     padding: 1.12rem;
     text-align: center;
@@ -167,6 +167,7 @@ nav ul li a:hover {
   }
 
 .section {
+    width: 100%;
     padding: 2.8rem 2vw;
     border-bottom: 0.6rem solid #ccc;
   }
