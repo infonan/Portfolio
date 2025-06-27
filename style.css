@@ -149,7 +149,7 @@ nav ul li a:hover {
 }
 .resume img {
       width: 100%;
-      max-width: 15rem
+      max-width: 15rem;
       height: auto;
       border-radius: 0.833rem;
       box-shadow: 0 0.44rem 1.12rem rgba(0, 0, 0, 0.2);
