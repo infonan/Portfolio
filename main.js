@@ -3,6 +3,12 @@ function toggleSidebar() {
     const sidebar = document.getElementById("sidebar");
     sidebar.classList.toggle("active");
   }
+const closeBtn = document.getElementById('close-sidebar');
+closeBtn.addEventListener('click', () => {
+  sidebar.classList.remove('active');
+});
+
+
   
 // image slider //
 document.addEventListener('DOMContentLoaded', function() {
