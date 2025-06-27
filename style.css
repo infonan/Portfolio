@@ -1,6 +1,7 @@
 
 /* MAIN */
 body {
+    width: 100%;
     font-size: 18px;
     margin: 0;
     font-family:'Georgia', serif;
@@ -139,9 +140,9 @@ nav ul li a:hover {
 
 
 .resume {
-  width: 40vw;
-  height: 30vh;
-  padding: 2vh 20vw ;
+  width: 90%;
+  height: auto;
+  padding: 2vh 10vw ;
   
 }
 .resume img {
@@ -167,7 +168,7 @@ nav ul li a:hover {
 
 .section {
     padding: 2.8rem 2vw;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 0.6rem solid #ccc;
   }
 
   .section-title {
