@@ -139,26 +139,7 @@ nav ul li a:hover {
   
 
 
-.resume {
-  width: 58%;
-  padding: 2vh 20vw ;
-  align-items: center;
-  
-}
-.resume img {
-      width: 100%;
-      max-width: 15rem;
-      height: auto;
-      border-radius: 0.833rem;
-      box-shadow: 0 0.44rem 1.12rem rgba(0, 0, 0, 0.2);
-      transition: transform 0.3s ease;
-    margin-top: 5rem;
-    
-    }
 
-.resume img:hover {
-      transform: scale(1.05);
-}
 
   a {
       text-decoration: none;
@@ -178,7 +159,29 @@ nav ul li a:hover {
     font-size: 1.8rem;
     margin-bottom: 1.12rem;
     color: #333;
-    text-align: center;
+.resume {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto 2.5rem auto;
+  padding: 2.5rem 2vw;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.resume img {
+  display: block;
+  margin: 5rem auto;
+  width: 100%;
+  max-width: 15rem;
+  height: auto;
+  border-radius: 0.833rem;
+  box-shadow: 0 0.44rem 1.12rem rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.resume img:hover {
+  transform: scale(1.05);
+}    text-align: center;
   }
 
   .project-list {
