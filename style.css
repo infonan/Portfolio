@@ -40,9 +40,9 @@ body {
       border-radius: 1.4rem ;
       text-align:center;
       font-size: 0.8rem;
-      width: 85%
+      width: 86%
       margin: auto;
-      padding: 0.8rem;
+      padding: 1.12rem;
       background-color:#fffdd0;
       box-shadow: 0 0.45rem 1.12rem rgba(0,0,0,0.2);
     }
@@ -61,6 +61,7 @@ body {
 
   .skills-container {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     gap: 0.83rem;
     justify-content: center;
