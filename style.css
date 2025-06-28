@@ -40,7 +40,8 @@ body {
       border-radius: 1.4rem ;
       text-align:center;
       font-size: 0.8rem;
-      margin: 5vh 8vw 4vh 8vw;
+      width: 85%
+      margin: auto;
       padding: 0.8rem;
       background-color:#fffdd0;
       box-shadow: 0 0.45rem 1.12rem rgba(0,0,0,0.2);
