@@ -136,6 +136,7 @@ nav ul li a:hover {
 
 .section { 
   text-align: center;
+  width:95%;
   margin: auto;
   border-bottom: 0.09rem solid #ccc;
   padding-bottom: 6rem;
