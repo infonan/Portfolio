@@ -13,7 +13,7 @@ body {
 }
     
     /* Mobile view */
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   html {
     font-size: 6px;
   }
@@ -39,6 +39,7 @@ body {
       border: 0.12px solid #b0b0b0;
       border-radius: 1.4rem ;
       text-align:center;
+      font-size: 1.12rem;
       margin: 5vh 8vw 4vh 8vw;
       padding: 1em;
       background-color:#fffdd0;
@@ -119,7 +120,7 @@ nav ul li a {
   text-decoration: none;
   color: #333;
   padding: 0.55rem 0.9rem;
-  border: 0.15rem solid #A9A9A9;
+  border: 0.12rem solid black;
   border-radius: 1.12rem;
   transition: background-color 0.3s ease, color 0.3s ease;
   background-color: palegreen;
@@ -151,7 +152,6 @@ nav ul li a:hover {
   box-shadow: 0 0.3rem 0.8rem rgba(0, 0, 0, 0.3);
   
 }
-
 
 
 .project-list {
@@ -250,32 +250,48 @@ nav ul li a:hover {
   color: #555;
   margin-top: 1.12rem;
 }
+
+
+/*project page*/
+.projsec {
+  text-align: center;
+  margin: 0;
+}
+.projbox {
+  text-align: left;
+  background-color:#fffdd0;
+  border: 0.16rem solid black;
+  border-radius: 1.39rem;
+  width:85%;
+  padding: 1rem 1rem;
+  font-size: 1.2rem;
+  margin: 7rem auto;
+}
+
+.projtitle {
+text-decoration: underline;
+text-align: center;
+margin-bottom: 1.5rem;
+}
+.proimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
 .proimg img {
   width: 19.5rem;
   height: 16.6rem;
   border: 0.22rem solid #FFD700;
-  margin: 0.28rem;
   
 }
-/*project page*/
-.projdesc,.compdesc {
-  text-align: left;
-  background-color:#fffdd0;
-  border: 0.17rem solid black;
-  border-radius: 1.39rem;
-  width:80%;
-  padding: 0.17rem 0.44rem;
-  margin: auto;
-  font-size: 1rem;
-}
-.compdesc ul li{
-  margin: 1.12rem;
-}
-.projdesc ul li{
-  margin: 1.12rem;
-}
-.projcomptitle {
-text-decoration: underline;
+.projdesc ul li,.compdesc ul li {
+  font-weight: 1000;
+  margin-bottom: 1.2rem;
+  
+  
 }
   
 /* left sidebar */
@@ -316,7 +332,7 @@ text-decoration: underline;
   font-weight: bold;
   font-size: 1rem;
   transition: color 0.2s ease;
-  border: 0.15rem solid #A9A9A9;
+  border: 0.11rem solid black;
   border-radius: 1.12rem;
   padding: 0.44rem 0.28rem;
   background-color: palegreen;
