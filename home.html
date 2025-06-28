@@ -27,7 +27,8 @@
   </nav>
 </header>
  <!-- Sidebar Menu (Responsive) -->
-<aside class="sidebar" id="sidebar"><strong><button class="closebtn" id="close-sidebar" aria-label="Close Sidebar">&times;</button><p style="font-size:1.35rem;text-align:center;">MENU</p></strong>
+<aside class="sidebar" id="sidebar"><strong>
+  <button class="closebtn" id="close-sidebar" aria-label="Close Sidebar">&times;</button><p style="font-size:1.33rem;text-align:center;">MENU</p></strong>
   <ul>
     <li><a href="course.html">Courses and Certificates</a></li>
     <li><a href="https://infonannotes.blogspot.com" target="_blank">My Blog</a></li>
@@ -37,13 +38,14 @@
 <br><br><br>
 <div style="text-align:center;">
    <img src="https://i.postimg.cc/PJgGfNDn/profilepic.png" alt="profile picture" id="profilepic" onclick="changetext()"><br>
-   <p id="topname"style="font-size:1.77rem;"><b>Hi, I'm Nandlal Kumar</b> </p>
-</div><br><hr><br>
-   <h2 align="center"id="title">ABOUT ME</h2>
+   <p id="topname"style="font-size:1.8rem;"><b>Hi, I'm Nandlal Kumar</b> </p>
+</div><br><hr>
+<div class="section" id="about-me">
+   <h2 align="center" class="title">ABOUT ME</h2>
   <p id="intro">I’m a B.Tech student majoring in Chemical Engineering at BIT Sindri, with a growing focus towards sustainable innovations in material science and waste management. I have a foundation in Python and MySQL, I’m currently exploring how automation, IoT, and AI can be integrated into industrial applications. I’m also passionate about robotics, graphic design, and blog writing, and I’m always eager to learn and collaborate with like-minded individuals interested in technology, creativity, and sustainability.</p>
-  <br><br><hr>
-  <div class="skills-section">
-  <h2 class="title">My Technical Skills</h2><br>
+  </div>
+  <div class="section" id="tech-skills">
+  <h2 class="title">MY TECHNICAL SKILLS</h2>
   <div class="skills-container">
     <div class="skill">
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
@@ -70,10 +72,8 @@
   </div>
 </div>
 
-
-<br><hr>
- <div class="skills-section">
-  <h2 class="title">My Soft Skills</h2><br>
+ <div class="section" id="soft-skills">
+  <h2 class="title">MY SOFT SKILLS</h2>
   <div class="skills-container">
     <div class="skill" >
        <a href="https://infonannotes.blogspot.com/" target="_blank" id="bloglink">
@@ -83,36 +83,35 @@
     <div class="skill">Quick learner</div>
     <div class="skill">Teamwork</div>
 </div></div>
-<br><br><hr>
-<div class="skills-section">
-  <h2 class="title">Languages </h2><br>
+
+<div class="section" id="lang">
+  <h2 class="title">LANGUAGES</h2>
   <div class="skills-container">
     <div class="skill">English</div>
     <div class="skill">Hindi </div>
+ </div>
+ </div>
+
+<div id="resume" class="section">
+  <h2 class="title">MY RESUME</h2>
+  <a href="/images/resume nandkmay2025 (6).doc" target="_blank">
+    <img src="https://t3.ftcdn.net/jpg/04/88/23/60/360_F_488236091_z1ByMayruwyueTHk80QGeDDZbE61ezs9.webp" alt="resume">
+  </a>
 </div>
-<br><br><br><hr><br>
- <section id="resume" class="section">
-   <h2 class="title"> My Resume </h2>
-  <br><br>
-    <a href="https://infonan.github.io/resume/" target="_blank">
-      <img src="https://t3.ftcdn.net/jpg/04/88/23/60/360_F_488236091_z1ByMayruwyueTHk80QGeDDZbE61ezs9.webp" alt="resume">
-    </a><br>
- </section>
-  <br>
+
 <!-- Featured Projects Section -->
-<section class="section">
-  <h2 class="section-title">Featured Projects</h2>
-  <br><br>
+<section class="section" id="projects-home">
+  <h2 class="title">FEATURED PROJECTS</h2>
   <div class="project-list">
     <div class="project-card">
-      <h3>Smart Inventory Management System</h3>
+      <h4>Smart Inventory Management System</h4>
       <p>A real-time tracking system and interface using sensors and MySQL for inventory management.</p>
       <p><strong>Tech Used:</strong> PHP, Python, MySQL, Microcontrollers</p>
     </div>
     <br>
     <br>
-        <div class="project-card">
-      <h3>Bio-Brick Prototype (in progress)</h3>
+    <div class="project-card">
+      <h4>Bio-Brick Prototype (in progress)</h4>
       <p>Eco-friendly bricks made from plastic waste, fly ash, and other waste materials to promote sustainable construction.</p>
       <p><strong>Tech Used:</strong> Material Science, Waste Management</p>
     </div>
@@ -120,11 +119,9 @@
   <br><br>
   <a href="project.html" class="button">View All Projects</a>
 </section>
-<br>
 <!-- Certifications Section -->
-<section class="section">
-  <h2 class="section-title">Courses & Certifications</h2>
-  <br><br>
+<section class="section" id="certificate-home">
+  <h2 class="title">COURSES & CERTIFICATIONS</h2>
   <ul class="cert-list" type="disc">
     <li><b>Waste Management Course</b> : RF Skilling Academy (May 2025)</li>
     <br>
@@ -132,14 +129,12 @@
     <br>
     <li><b>Certificate of participation </b> : INNOVATHON 2025 (Jan 2025)</li>
   </ul>
-  <br>
+  <br><br>
   <a href="course.html" class="button">View All Certifications</a>
 </section>
-<br>
 <!-- Achievements Section Link -->
-<section class="section">
-  <h2 class="section-title">Competitions & Achievements</h2>
-  <br><br>
+<section class="section" id="competition-home">
+  <h2 class="title">COMPETITIONS & ACHIEVEMENTS</h2>
   <ul class="cert-list" type="disc">
      <li> <b>Idea Pitching Competition </b> : by (JUT Ranchi, Apr 2025)</li>
      <br>
@@ -149,11 +144,9 @@
     <br>
     <li><b>Cyber Challenge</b> : by (Delhi Police, Feb 2025)</li>
   </ul>
-  <br>
+  <br><br>
   <a href="project.html#comp" class="button">See More Achievements</a>
 </section>
-
-  <br><br><br><br><br><br><br><br><br><br><br><br>
   
   <footer class="footer">
   <div class="social-icons">
