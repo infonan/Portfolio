@@ -35,13 +35,13 @@ document.addEventListener('DOMContentLoaded', function() {
       updateSlider();
     }
 
-    // Add button functionality only if buttons exist
+    // Adds button functionality only if buttons exist
     if (nextBtn) nextBtn.addEventListener('click', goToNext);
     if (prevBtn) prevBtn.addEventListener('click', goToPrev);
 
     // Autoplay for all sliders
     function startAutoplay() {
-      intervalId = setInterval(goToNext, 3000); // 3 seconds per slide
+      intervalId = setInterval(goToNext, 4500); // 4.5 sec per slide
     }
 
     function stopAutoplay() {
