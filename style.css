@@ -1,4 +1,6 @@
-
+html, body {
+  overflow-x: hidden !important;
+}
 /* MAIN */
 body {
     font-size: 18px;
@@ -6,7 +8,6 @@ body {
     font-family:'Georgia', serif;
     background-color: #ffffff;
     padding: 0;
-    overflow-x: hidden;
     background: linear-gradient(-90deg, #e6f4ea, #cdeac0, #f7e9d7, #d9bf77);
     background-size: 400% 400%;
     animation: gradientBG 15s ease infinite;
