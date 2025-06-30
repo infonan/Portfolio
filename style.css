@@ -272,7 +272,7 @@ nav ul li a:hover {
   border-radius: 1.39rem;
   width:85%;
   padding: 1rem 1rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin: 7rem auto;
 }
 
@@ -296,7 +296,7 @@ margin-bottom: 1.5rem;
   
 }
 .projdesc ul li,.compdesc ul li {
-  font-weight: 1000;
+  font-weight: 500;
   margin-bottom: 1.2rem;
   
   
