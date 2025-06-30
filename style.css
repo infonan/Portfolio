@@ -15,7 +15,7 @@ body {
     
     /* Mobile view */
 @media (max-width: 768px) {
-  html {
+  body,html {
     font-size: 6px;
   }
 }
@@ -220,6 +220,9 @@ nav ul li a:hover {
 .coitems {
   font-weight: bold;
 }
+.coitems img {
+  width: 2rem;
+  height: auto;
 
   /* footer */
   .footer {
