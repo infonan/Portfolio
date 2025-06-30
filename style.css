@@ -15,7 +15,7 @@ body {
     
     /* Mobile view */
 @media (max-width: 768px) {
-  body,html {
+  html {
     font-size: 6px;
   }
 }
